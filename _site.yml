@@ -1,0 +1,13 @@
+name: STS 205
+output_dir: "."
+navbar:
+  title: "STS 205: Texts, Maps, Networks, and Numbers"
+  left:
+    - text: "Description"
+      href: index.html
+    - text: "Schedule"
+      href: schedule.html
+    - text: "Email Prof. M"
+      href: mailto:ekmerchant@ucdavis.edu"
+    - text: "Meet with Prof. M"
+      href: https://ekmerchant.youcanbook.me/

@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+
+<title>Schedule</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/paper.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 64px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 69px;
+  margin-top: -69px;
+}
+
+.section h2 {
+  padding-top: 69px;
+  margin-top: -69px;
+}
+.section h3 {
+  padding-top: 69px;
+  margin-top: -69px;
+}
+.section h4 {
+  padding-top: 69px;
+  margin-top: -69px;
+}
+.section h5 {
+  padding-top: 69px;
+  margin-top: -69px;
+}
+.section h6 {
+  padding-top: 69px;
+  margin-top: -69px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+  padding-left: 25px;
+  text-indent: 0;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">STS 205: Texts, Maps, Networks, and Numbers</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Description</a>
+</li>
+<li>
+  <a href="schedule.html">Schedule</a>
+</li>
+<li>
+  <a href="mailto:ekmerchant@ucdavis.edu&quot;">Email Prof. M</a>
+</li>
+<li>
+  <a href="https://ekmerchant.youcanbook.me/">Meet with Prof. M</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Schedule</h1>
+
+</div>
+
+
+<p><span class="math inline">\(~\)</span></p>
+<div id="week-1-january-10" class="section level2">
+<h2>Week 1: January 10</h2>
+<div id="introduction-to-the-course-and-to-computational-thinking" class="section level3">
+<h3>Introduction to the course and to computational thinking</h3>
+<div id="read" class="section level4">
+<h4>Read:</h4>
+<ul>
+<li>David M. Berry, “<a href="https://sro.sussex.ac.uk/49813/1/BERRY_2011-THE_COMPUTATIONAL_TURN-_THINKING_ABOUT_THE_DIGITAL_HUMANITIES.pdf">The Computational Turn: Thinking About the Digital Humanities</a>,” <em>Culture Machine</em> vol. 12, 2011, pp. 1-22.</li>
+<li>Wendy Hui Kyong Chun and Lisa Marie Rhody, “<a href="https://read.dukeupress.edu/differences/article/25/1/1/60673/Working-the-Digital-Humanities-Uncovering-Shadows">Working the Digital Humanities: Uncovering Shadows between the Dark and the Light</a>,” <em>Differences</em> vol. 25, no. 1, 2014, pp. 1-25.</li>
+<li>Roberto Franzosi, “<a href="https://doi.org/10.1080/01615440.2017.1361879">A Third Road to the Past? Historical Scholarship in the Age of Big Data</a>,” <em>Historical Methods</em> vol. 50, no. 4, 2017, pp. 227-244.</li>
+</ul>
+</div>
+<div id="activity-getting-started-with-r-and-rstudio" class="section level4">
+<h4>Activity: Getting started with R and RStudio</h4>
+<p><span class="math inline">\(~\)</span></p>
+</div>
+</div>
+</div>
+<div id="week-2-january-17" class="section level2">
+<h2>Week 2: January 17</h2>
+<div id="numbers---working-with-quantitative-data" class="section level3">
+<h3>Numbers - Working with quantitative data</h3>
+<div id="read-1" class="section level4">
+<h4>Read:</h4>
+<ul>
+<li>Robert A. Gross, “<a href="https://www.jstor.org/stable/2713152">The Machine-Readable Transcendentalists: Cultural History on the Computer</a>,” <em>American Quarterly</em> vol. 41, no. 3, 1989, pp. 501-521.</li>
+<li>Steven Ruggles, “<a href="https://www.jstor.org/stable/2166164">The Transformation of American Family Structure</a>,” <em>The American Historical Review</em> vol. 99, no. 1, 1994, pp. 103-128.</li>
+<li>James N. Gregory, “<a href="https://www.jstor.org/stable/2081917">The Southern Diaspora and the Urban Dispossessed: Demonstrating the Census Public Use Microdata Samples</a>,” <em>The Journal of American History</em> vol. 82, no. 1, 1995, pp. 111-134.</li>
+</ul>
+</div>
+<div id="explore" class="section level4">
+<h4>Explore:</h4>
+<ul>
+<li><a href="https://usa.ipums.org/usa/">IPUMS-USA</a>. Request user account.</li>
+</ul>
+</div>
+<div id="activity-working-with-numbers" class="section level4">
+<h4>Activity: Working with numbers</h4>
+<p><span class="math inline">\(~\)</span></p>
+</div>
+</div>
+</div>
+<div id="week-3-january-24" class="section level2">
+<h2>Week 3: January 24</h2>
+<div id="numbers---data-visualization" class="section level3">
+<h3>Numbers - Data visualization</h3>
+<div id="read-2" class="section level4">
+<h4>Read:</h4>
+<ul>
+<li>Bruno Latour, “<a href="http://hci.ucsd.edu/10/readings/Latour(1986).pdf">Visualization and Cognition: Thinking with Eyes and Hands</a>,” <em>Knowledge and Society: Studies in the Sociology of Culture Past and Present</em> 6, 1986, pp. 1-40.</li>
+<li>Michael Lynch and Steve Woolgar, “<a href="https://www.jstor.org/stable/20009022">Introduction: Sociological Orientations to Representational Practice in Science</a>,” <em>Human Studies</em> 11, 1988, pp. 99-116.<br />
+</li>
+<li>Johanna Drucker, <em>Graphesis: Visual Forms of Knowledge Production</em> (Cambridge: Harvard University Press, 2014): pp. 125-137.<br />
+</li>
+<li>Lauren Klein, “<a href="https://doi.org/10.1215/00029831-2367310">The Image of Absence: Archival Silence, Data Visualization, and James Hemings</a>” <em>American Literature</em> 85, no. 4, 2013, pp. 661-688.<br />
+</li>
+<li>Catherine D’Ignazio and Lauren Klein, “<a href="http://www.kanarinka.com/wp-content/uploads/2015/07/IEEE_Feminist_Data_Visualization.pdf">Feminist Data Visualization</a>,” Proceedings of the Workshop on Visualization for the Digital Humanities at IEEE VIS Conference 201. Also see: Catherine D’Ignazio, <a href="https://civic.mit.edu/2015/12/01/feminist-data-visualization/">What Would Feminist Data Visualization Look Like?</a> and Lauren Klein, <a href="http://lklein.com/2017/01/feminist-data-visualization-or-the-shape-of-history/">Feminist Data Visualization; Or, the Shape of History</a>.</li>
+</ul>
+</div>
+<div id="activity-visualizing-quantitative-information" class="section level4">
+<h4>Activity: Visualizing quantitative information</h4>
+</div>
+<div id="due" class="section level4">
+<h4>Due:</h4>
+<ul>
+<li>Notebook 1 (Numbers) 1/28</li>
+</ul>
+<p><span class="math inline">\(~\)</span></p>
+</div>
+</div>
+</div>
+<div id="week-4-january-31" class="section level2">
+<h2>Week 4: January 31</h2>
+<div id="maps---discussion-with-professor-greg-downs" class="section level3">
+<h3>Maps - Discussion with Professor Greg Downs</h3>
+<div id="read-3" class="section level4">
+<h4>Read:</h4>
+<ul>
+<li>Jo Guldi, “<a href="http://spatial.scholarslab.org/spatial-turn/">What is the Spatial Turn?</a>” Read all sections (follow link to “Introduction,” then follow links to the right of the main text).</li>
+</ul>
+</div>
+<div id="explore-1" class="section level4">
+<h4>Explore:</h4>
+<ul>
+<li>Greg Downs and Scott Nesbit, <a href="http://mappingoccupation.org/">Mapping Occupation</a>.</li>
+<li>Scott Nesbit and Edward L. Ayers, <a href="http://dsl.richmond.edu/emancipation/">Visualizing Emancipation</a>.</li>
+</ul>
+</div>
+<div id="activity-mapping-in-r" class="section level4">
+<h4>Activity: Mapping in R</h4>
+<p><span class="math inline">\(~\)</span></p>
+</div>
+</div>
+</div>
+<div id="week-5-february-7" class="section level2">
+<h2>Week 5: February 7</h2>
+<div id="maps---thinking-spatially" class="section level3">
+<h3>Maps - Thinking spatially</h3>
+<div id="read-4" class="section level4">
+<h4>Read:</h4>
+<ul>
+<li>Cameron Blevins, “<a href="https://doi.org/10.1093/jahist/jau184">Space, Nation, and the Triumph of Region: A View of the World from Houston</a>,” <em>Journal of American History</em> vol. 101, no. 1, 2014, pp. 122-147.</li>
+<li>Cameron Blevins, “<a href="http://web.stanford.edu/group/spatialhistory/cgi-bin/site/pub.php?id=93">Mining and Mapping the Production of Space: A View of the World from Houston</a>,” Stanford University Spatial History Project.</li>
+<li>Matthew Wilkens, “<a href="https://muse.jhu.edu/article/527788">The Geographic Imagination of Civil War-Era American Fiction</a>,” <em>American Literary History</em> vol. 25, 2013, pp. 803-840.</li>
+<li>Robert K. Nelson, “<a href="https://muse.jhu.edu/article/613602">Digital Humanities as Appendix</a>,” <em>American Quarterly</em> vol. 68, no. 1, 2016, pp.131-136.</li>
+</ul>
+</div>
+<div id="explore-2" class="section level4">
+<h4>Explore:</h4>
+<ul>
+<li>Robert K. Nelson and Edward L. Ayers, eds., <a href="https://dsl.richmond.edu/panorama/">American Panorama</a></li>
+<li>University of Richmond, <a href="https://dsl.richmond.edu/historicalatlas/">Atlas of the Historical Geography of the United States</a></li>
+</ul>
+</div>
+<div id="activity-making-maps-meaningful" class="section level4">
+<h4>Activity: Making maps meaningful</h4>
+</div>
+<div id="due-1" class="section level4">
+<h4>Due:</h4>
+<ul>
+<li>Proposal for Final Project 2/8<br />
+</li>
+<li>Notebook 2 (Maps) 2/11</li>
+</ul>
+<p><span class="math inline">\(~\)</span></p>
+</div>
+</div>
+</div>
+<div id="week-6-february-14" class="section level2">
+<h2>Week 6: February 14</h2>
+<div id="texts---algorithmic-distant-reading" class="section level3">
+<h3>Texts - Algorithmic (“distant”) reading</h3>
+<div id="read-5" class="section level4">
+<h4>Read:</h4>
+<ul>
+<li>Stephen Ramsay, *<a href="http://ebookcentral.proquest.com/lib/ucdavis/detail.action?docID=3413843">Reading Machines: Toward an Algorithmic Criticism</a>]<br />
+</li>
+<li>Matthew Jockers, “Part 1: Foundation,” pp. 3-32 in <em><a href="http://ebookcentral.proquest.com/lib/ucdavis/detail.action?docID=3414227">Macroanalysis: Digital Methods and Literary History</a></em> (Urbana: University of Illinois Press, 2013).</li>
+</ul>
+</div>
+<div id="activity-manipulating-texts" class="section level4">
+<h4>Activity: Manipulating texts</h4>
+<p><span class="math inline">\(~\)</span></p>
+</div>
+</div>
+</div>
+<div id="week-7-february-21" class="section level2">
+<h2>Week 7: February 21</h2>
+<div id="texts---topic-modeling" class="section level3">
+<h3>Texts - Topic modeling</h3>
+<div id="read-6" class="section level4">
+<h4>Read:</h4>
+<ul>
+<li>Matthew Jockers, “Theme,” pp. 118-153 in <em><a href="http://ebookcentral.proquest.com/lib/ucdavis/detail.action?docID=3414227">Macroanalysis: Digital Methods and Literary History</a></em> (Urbana: University of Illinois Press, 2013).</li>
+<li>Lisa Rhody, “<a href="http://journalofdigitalhumanities.org/2-1/topic-modeling-and-figurative-language-by-lisa-m-rhody/">Topic Modeling and Figurative Language</a>” <em>Journal of Digital Humanities</em> 2, no. 1, 2012.</li>
+<li>Ben Schmidt, “<a href="http://journalofdigitalhumanities.org/2-1/words-alone-by-benjamin-m-schmidt/">Words Alone: Dismantling Topic Models in the Humanities</a>,” <em>Journal of Digital Humanities</em> 2, no. 1, 2012.</li>
+</ul>
+</div>
+<div id="activity-analyzing-texts" class="section level4">
+<h4>Activity: Analyzing texts</h4>
+</div>
+<div id="due-2" class="section level4">
+<h4>Due:</h4>
+<ul>
+<li>Notebook 3 (Texts) 2/25</li>
+</ul>
+<p><span class="math inline">\(~\)</span></p>
+</div>
+</div>
+</div>
+<div id="week-8-feburary-28" class="section level2">
+<h2>Week 8: Feburary 28</h2>
+<div id="networks---thinking-about-connection" class="section level3">
+<h3>Networks - Thinking about connection</h3>
+<div id="read-7" class="section level4">
+<h4>Read:</h4>
+<ul>
+<li>David Easley and Jon Kleinberg, <em><a href="http://www.cs.cornell.edu/home/kleinber/networks-book/networks-book.pdf">Networks, Crowds, and Markets: Reasoning About a Highly Connected World</a></em>, pre-print edition (Cambridge: Cambridge University Press, 2010), selections.</li>
+</ul>
+</div>
+<div id="explore-3" class="section level4">
+<h4>Explore:</h4>
+<ul>
+<li><a href="https://viraltexts.org">Viral Texts</a></li>
+</ul>
+</div>
+<div id="activity-edges-and-nodes" class="section level4">
+<h4>Activity: Edges and nodes</h4>
+<p><span class="math inline">\(~\)</span></p>
+</div>
+</div>
+</div>
+<div id="week-9-march-7" class="section level2">
+<h2>Week 9: March 7</h2>
+<div id="networks---humanizing-networks" class="section level3">
+<h3>Networks - Humanizing networks</h3>
+<div id="read-8" class="section level4">
+<h4>Read:</h4>
+<ul>
+<li>Scott B. Weingart, “<a href="http://journalofdigitalhumanities.org/1-1/demystifying-networks-by-scott-weingart/">Demystifying Networks, Parts I &amp; II</a>,” <em>Journal of Digital Humanities</em> 1, no. 1, 2011.</li>
+<li>Caroline Winterer, “<a href="https://doi.org/10.1017/S1479244312000212">Where is America in the Republic of Letters?</a>,” <em>Modern Intellectual History</em> 9, no. 3, 2012, pp. 597-623.</li>
+<li>Scott B. Weingart, “<a href="https://link.springer.com/article/10.1007%2Fs10670-014-9621-1">Finding the History and Philosophy of Science</a>,” <em>Erkenntnis</em> 80, no. 1, 2015, pp. 201-213.</li>
+</ul>
+</div>
+<div id="explore-4" class="section level4">
+<h4>Explore:</h4>
+<ul>
+<li><a href="http://republicofletters.stanford.edu/">Mapping the Republic of Letters</a></li>
+</ul>
+</div>
+<div id="activity-visualizing-networks" class="section level4">
+<h4>Activity: Visualizing networks</h4>
+</div>
+<div id="due-3" class="section level4">
+<h4>Due:</h4>
+<ul>
+<li>Notebook 4 (Networks) 3/11</li>
+</ul>
+<p><span class="math inline">\(~\)</span></p>
+</div>
+</div>
+</div>
+<div id="week-10-march-14" class="section level2">
+<h2>Week 10: March 14</h2>
+<div id="workshopping-final-papers" class="section level3">
+<h3>Workshopping final papers</h3>
+<div id="due-4" class="section level4">
+<h4>Due:</h4>
+<ul>
+<li>Final Project 3/21</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

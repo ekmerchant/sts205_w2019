@@ -1,0 +1,51 @@
+---
+title: "STS 205: Texts, Maps, Networks, and Numbers: An Introduction to Computational Approaches in the Humanities and Social Sciences"
+author: "Professor Emily Klancher Merchant"
+date: "UC Davis, Winter 2019"
+output: 
+  html_document:
+    toc: true    
+    toc_depth: 3
+    toc_float: true
+    theme: paper
+---
+### Overview
+This seminar will introduce graduate students to computational approaches to data analysis in the humanities and interpretive social sciences. Using the R programming language, we will analyze and visualize numeric, spatial, textual, and network data. We will consider how these modes of analysis can help us pose and explore valuable research question, and we will interrogate these approaches from a critical perspective grounded in science and technology studies. No prior experience necessary.
+
+### Meetings
+We will meet **Thursdays from 12:10 to 3pm** in the STS conference room (SSH 1246). Attendance is mandatory. In general, the first two hours will be devoted to discussion of readings and websites. The remaining hour will be used for hands-on practice in programming and data analysis and visualization. **Please bring a laptop to each class session.** It is also fine to bring your lunch to class and eat it during discussion.
+
+Class discussions will be largely student-led. **You will sign up to lead two discussions during the quarter, which means that 2-3 students will lead each discussion.** All readings should be completed prior class on the day listed in the schedule. Discussion leaders should prepare questions that encourage students to make connections across readings and to other texts we have discussed in this class. During the final hour of each class meeting, when we are not working together as a group, students who have more experience with R and with the topic of the day's activity should help those who have less experience.
+
+### Notebook Assignments
+Our work in R will take the form of R Markdown Notebooks. Notebooks support the use of literate programming, which combines natural language (in this case, English) with executable code (in this case, R) and its output. **You will complete four assignments in this format over the quarter: Numbers, due 1/28; Maps, due 2/11; Texts, due 2/25; and Networks, due 4/11 (all by 5pm).** These assignments will ask you to do a short exercise in data analysis and visualization, and to describe your methods and interpret your results. They will therefore allow you to practice communicating about data anlaysis as well as performing and presenting the analysis. You may work on these assignments together, but each person must turn in their own notebook, and the text components must be written in your own words. If you have your own data, you are welcome to work with it as a substitute for any (or all) of the four notebook assignments, so long as your work with that data fulfils the pedagogical goals of the assignment. Please consult with me about how to make that substitution.
+
+### Final Project
+The purpose of this class is to give you the background and skills you will need to advance your career as a scholar. For that reason, you will design your own final project in the way that will best suit your needs at this moment. It can take the form of a conference paper, a grant proposal, a proposal for a project to complete independently in another quarter (I will be happy to supervise this), a teaching portfolio, a background paper for your qualifying exams, or any other project that addresses the themes of the class and is 3,500-5,000 words in length. **You will submit a one-page (maximum) proposal by 5pm on 2/8. We will workshop projects in class on 3/14; final projects will be due by 5pm on 3/21.**
+
+### Grading
+Your grade will be calculated as follows:  
+
+- Leading class discussion (5% each) - 10%  
+- Notebook assignments (10% each) - 40%  
+- Final project (including proposal) - 50%  
+
+### Late Work
+With the exception of the final paper, there is a two-day grace period (no questions asked) for all assignments. If you will be unable to turn in your assignment by the end of the grace period, you must meet with me to establish a timeline for completing it.
+
+### Resources
+All class readings are available online and linked from the syllabus. You may also find the following resources helpful:
+
+- [Humanities Data in R](https://link.springer.com/book/10.1007%2F978-3-319-20702-5) by Taylor Arnold and Lauren Tilton  
+- [Text Mining with R: A Tidy Approach](https://www.tidytextmining.com/) by Julia Silge and David Robinson  
+- [Text Analysis with R for Students of Literature](https://link.springer.com/book/10.1007%2F978-3-319-03164-4) by Matthew Jockers (access from on campus or while connected by VPN)  
+- [Digital History Methods in R](https://lincolnmullen.com/projects/dh-r2/) by Lincoln Mullen  
+- [The Programming Historian](https://programminghistorian.org/)  
+- [R for Data Science](https://r4ds.had.co.nz/) by Garrett Grolemund and Hadley Wickham  
+- [Advanced R](http://adv-r.had.co.nz/) by Hadley Wickham 
+- [Introduction to Text Analysis: A Coursebook](http://walshbr.com/textanalysiscoursebook/) by Brandon Walsh and Sarah Horowitz  
+- [Six Septembers: Mathematics for the Humanist](http://digitalcommons.unl.edu/zeabook/55/) by Patrick Juola and Stephen Ramsay  
+
+### Acknowledgments
+This syllabus was inspired by and adapted from numerous syllabi in the digital humanities and digital history. The most direct and obvious influences are the courses HIST 7370: Texts, Maps, and Networks and HIST 7219: Humanities Data Analysis, taught by [Ben Schmidt](benschmidt.org), [Ryan Cordell](ryancordell.org), and [Cameron Blevins](cameronblevins.org) at Northeastern University. I am also grateful to [Scott Weingart](http://scottbot.net/) for his [list of coding resources](http://scottbot.net/teaching-yourself-to-code-in-dh/).
+

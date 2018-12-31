@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+<meta name="author" content="Professor Emily Klancher Merchant" />
+
+
+<title>STS 205: Texts, Maps, Networks, and Numbers: An Introduction to Computational Approaches in the Humanities and Social Sciences</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/paper.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 64px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 69px;
+  margin-top: -69px;
+}
+
+.section h2 {
+  padding-top: 69px;
+  margin-top: -69px;
+}
+.section h3 {
+  padding-top: 69px;
+  margin-top: -69px;
+}
+.section h4 {
+  padding-top: 69px;
+  margin-top: -69px;
+}
+.section h5 {
+  padding-top: 69px;
+  margin-top: -69px;
+}
+.section h6 {
+  padding-top: 69px;
+  margin-top: -69px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+  padding-left: 25px;
+  text-indent: 0;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">STS 205: Texts, Maps, Networks, and Numbers</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Description</a>
+</li>
+<li>
+  <a href="schedule.html">Schedule</a>
+</li>
+<li>
+  <a href="mailto:ekmerchant@ucdavis.edu&quot;">Email Prof. M</a>
+</li>
+<li>
+  <a href="https://ekmerchant.youcanbook.me/">Meet with Prof. M</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">STS 205: Texts, Maps, Networks, and Numbers: An Introduction to Computational Approaches in the Humanities and Social Sciences</h1>
+<h4 class="author"><em>Professor Emily Klancher Merchant</em></h4>
+<h4 class="date"><em>UC Davis, Winter 2019</em></h4>
+
+</div>
+
+
+<div id="overview" class="section level3">
+<h3>Overview</h3>
+<p>This seminar will introduce graduate students to computational approaches to data analysis in the humanities and interpretive social sciences. Using the R programming language, we will analyze and visualize numeric, spatial, textual, and network data. We will consider how these modes of analysis can help us pose and explore valuable research question, and we will interrogate these approaches from a critical perspective grounded in science and technology studies. No prior experience necessary.</p>
+</div>
+<div id="meetings" class="section level3">
+<h3>Meetings</h3>
+<p>We will meet <strong>Thursdays from 12:10 to 3pm</strong> in the STS conference room (SSH 1246). Attendance is mandatory. In general, the first two hours will be devoted to discussion of readings and websites. The remaining hour will be used for hands-on practice in programming and data analysis and visualization. <strong>Please bring a laptop to each class session.</strong> It is also fine to bring your lunch to class and eat it during discussion.</p>
+<p>Class discussions will be largely student-led. <strong>You will sign up to lead two discussions during the quarter, which means that 2-3 students will lead each discussion.</strong> All readings should be completed prior class on the day listed in the schedule. Discussion leaders should prepare questions that encourage students to make connections across readings and to other texts we have discussed in this class. During the final hour of each class meeting, when we are not working together as a group, students who have more experience with R and with the topic of the day’s activity should help those who have less experience.</p>
+</div>
+<div id="notebook-assignments" class="section level3">
+<h3>Notebook Assignments</h3>
+<p>Our work in R will take the form of R Markdown Notebooks. Notebooks support the use of literate programming, which combines natural language (in this case, English) with executable code (in this case, R) and its output. <strong>You will complete four assignments in this format over the quarter: Numbers, due 1/28; Maps, due 2/11; Texts, due 2/25; and Networks, due 4/11 (all by 5pm).</strong> These assignments will ask you to do a short exercise in data analysis and visualization, and to describe your methods and interpret your results. They will therefore allow you to practice communicating about data anlaysis as well as performing and presenting the analysis. You may work on these assignments together, but each person must turn in their own notebook, and the text components must be written in your own words. If you have your own data, you are welcome to work with it as a substitute for any (or all) of the four notebook assignments, so long as your work with that data fulfils the pedagogical goals of the assignment. Please consult with me about how to make that substitution.</p>
+</div>
+<div id="final-project" class="section level3">
+<h3>Final Project</h3>
+<p>The purpose of this class is to give you the background and skills you will need to advance your career as a scholar. For that reason, you will design your own final project in the way that will best suit your needs at this moment. It can take the form of a conference paper, a grant proposal, a proposal for a project to complete independently in another quarter (I will be happy to supervise this), a teaching portfolio, a background paper for your qualifying exams, or any other project that addresses the themes of the class and is 3,500-5,000 words in length. <strong>You will submit a one-page (maximum) proposal by 5pm on 2/8. We will workshop projects in class on 3/14; final projects will be due by 5pm on 3/21.</strong></p>
+</div>
+<div id="grading" class="section level3">
+<h3>Grading</h3>
+<p>Your grade will be calculated as follows:</p>
+<ul>
+<li>Leading class discussion (5% each) - 10%<br />
+</li>
+<li>Notebook assignments (10% each) - 40%<br />
+</li>
+<li>Final project (including proposal) - 50%</li>
+</ul>
+</div>
+<div id="late-work" class="section level3">
+<h3>Late Work</h3>
+<p>With the exception of the final paper, there is a two-day grace period (no questions asked) for all assignments. If you will be unable to turn in your assignment by the end of the grace period, you must meet with me to establish a timeline for completing it.</p>
+</div>
+<div id="resources" class="section level3">
+<h3>Resources</h3>
+<p>All class readings are available online and linked from the syllabus. You may also find the following resources helpful:</p>
+<ul>
+<li><a href="https://link.springer.com/book/10.1007%2F978-3-319-20702-5">Humanities Data in R</a> by Taylor Arnold and Lauren Tilton<br />
+</li>
+<li><a href="https://www.tidytextmining.com/">Text Mining with R: A Tidy Approach</a> by Julia Silge and David Robinson<br />
+</li>
+<li><a href="https://link.springer.com/book/10.1007%2F978-3-319-03164-4">Text Analysis with R for Students of Literature</a> by Matthew Jockers (access from on campus or while connected by VPN)<br />
+</li>
+<li><a href="https://lincolnmullen.com/projects/dh-r2/">Digital History Methods in R</a> by Lincoln Mullen<br />
+</li>
+<li><a href="https://programminghistorian.org/">The Programming Historian</a><br />
+</li>
+<li><a href="https://r4ds.had.co.nz/">R for Data Science</a> by Garrett Grolemund and Hadley Wickham<br />
+</li>
+<li><a href="http://adv-r.had.co.nz/">Advanced R</a> by Hadley Wickham</li>
+<li><a href="http://walshbr.com/textanalysiscoursebook/">Introduction to Text Analysis: A Coursebook</a> by Brandon Walsh and Sarah Horowitz<br />
+</li>
+<li><a href="http://digitalcommons.unl.edu/zeabook/55/">Six Septembers: Mathematics for the Humanist</a> by Patrick Juola and Stephen Ramsay</li>
+</ul>
+</div>
+<div id="acknowledgments" class="section level3">
+<h3>Acknowledgments</h3>
+<p>This syllabus was inspired by and adapted from numerous syllabi in the digital humanities and digital history. The most direct and obvious influences are the courses HIST 7370: Texts, Maps, and Networks and HIST 7219: Humanities Data Analysis, taught by <a href="benschmidt.org">Ben Schmidt</a>, <a href="ryancordell.org">Ryan Cordell</a>, and <a href="cameronblevins.org">Cameron Blevins</a> at Northeastern University. I am also grateful to <a href="http://scottbot.net/">Scott Weingart</a> for his <a href="http://scottbot.net/teaching-yourself-to-code-in-dh/">list of coding resources</a>.</p>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

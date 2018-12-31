@@ -1,0 +1,140 @@
+---
+title: "Schedule"
+output: 
+  html_document:
+    toc: true    
+    toc_depth: 3
+    toc_float: true
+    theme: paper
+---
+
+$~$
+
+## Week 1: January 10
+### Introduction to the course and to computational thinking
+#### Read:
+- David M. Berry, "[The Computational Turn: Thinking About the Digital Humanities](https://sro.sussex.ac.uk/49813/1/BERRY_2011-THE_COMPUTATIONAL_TURN-_THINKING_ABOUT_THE_DIGITAL_HUMANITIES.pdf)," *Culture Machine* vol. 12, 2011, pp. 1-22.
+- Wendy Hui Kyong Chun and Lisa Marie Rhody, "[Working the Digital Humanities: Uncovering Shadows between the Dark and the Light](https://read.dukeupress.edu/differences/article/25/1/1/60673/Working-the-Digital-Humanities-Uncovering-Shadows)," *Differences* vol. 25, no. 1, 2014, pp. 1-25.
+- Roberto Franzosi, "[A Third Road to the Past? Historical Scholarship in the Age of Big Data](https://doi.org/10.1080/01615440.2017.1361879)," *Historical Methods* vol. 50, no. 4, 2017, pp. 227-244.
+
+#### Activity: Getting started with R and RStudio
+
+$~$
+
+## Week 2: January 17
+### Numbers - Working with quantitative data
+#### Read:
+- Robert A. Gross, "[The Machine-Readable Transcendentalists: Cultural History on the Computer](https://www.jstor.org/stable/2713152)," *American Quarterly* vol. 41, no. 3, 1989, pp. 501-521.
+- Steven Ruggles, "[The Transformation of American Family Structure](https://www.jstor.org/stable/2166164)," *The American Historical Review* vol. 99, no. 1, 1994, pp. 103-128.
+- James N. Gregory, "[The Southern Diaspora and the Urban Dispossessed: Demonstrating the Census Public Use Microdata Samples](https://www.jstor.org/stable/2081917)," *The Journal of American History* vol. 82, no. 1, 1995, pp. 111-134.
+
+#### Explore:
+- [IPUMS-USA](https://usa.ipums.org/usa/). Request user account.
+
+#### Activity: Working with numbers
+
+$~$
+
+## Week 3: January 24
+### Numbers - Data visualization
+#### Read:
+- Bruno Latour, "[Visualization and Cognition: Thinking with Eyes and Hands](http://hci.ucsd.edu/10/readings/Latour(1986).pdf)," *Knowledge and Society: Studies in the Sociology of Culture Past and Present* 6, 1986, pp. 1-40.
+- Michael Lynch and Steve Woolgar, "[Introduction: Sociological Orientations to Representational Practice in Science](https://www.jstor.org/stable/20009022)," *Human Studies* 11, 1988, pp. 99-116.  
+- Johanna Drucker, *Graphesis: Visual Forms of Knowledge Production* (Cambridge: Harvard University Press, 2014): pp. 125-137.  
+- Lauren Klein, "[The Image of Absence: Archival Silence, Data Visualization, and James Hemings](https://doi.org/10.1215/00029831-2367310)" *American Literature* 85, no. 4, 2013, pp. 661-688.  
+- Catherine D'Ignazio and Lauren Klein, "[Feminist Data Visualization](http://www.kanarinka.com/wp-content/uploads/2015/07/IEEE_Feminist_Data_Visualization.pdf)," Proceedings of the Workshop on Visualization for the Digital Humanities at IEEE VIS Conference 201. Also see: Catherine D'Ignazio, [What Would Feminist Data Visualization Look Like?](https://civic.mit.edu/2015/12/01/feminist-data-visualization/) and Lauren Klein, [Feminist Data Visualization; Or, the Shape of History](http://lklein.com/2017/01/feminist-data-visualization-or-the-shape-of-history/).
+
+#### Activity: Visualizing quantitative information
+#### Due:
+- Notebook 1 (Numbers) 1/28
+
+$~$
+
+## Week 4: January 31
+### Maps - Discussion with Professor Greg Downs
+#### Read: 
+- Jo Guldi, "[What is the Spatial Turn?](http://spatial.scholarslab.org/spatial-turn/)" Read all sections (follow link to "Introduction," then follow links to the right of the main text).
+
+#### Explore:
+- Greg Downs and Scott Nesbit, [Mapping Occupation](http://mappingoccupation.org/).
+- Scott Nesbit and Edward L. Ayers, [Visualizing Emancipation](http://dsl.richmond.edu/emancipation/).
+- Robert K. Nelson and Edward L. Ayers, eds., [American Panorama](https://dsl.richmond.edu/panorama/).
+
+#### Activity: Mapping in R
+
+$~$
+
+## Week 5: February 7
+### Maps - Thinking spatially
+#### Read:
+- Cameron Blevins, "[Space, Nation, and the Triumph of Region: A View of the World from Houston](https://doi.org/10.1093/jahist/jau184)," *Journal of American History* vol. 101, no. 1, 2014, pp. 122-147.
+- Cameron Blevins, "[Mining and Mapping the Production of Space: A View of the World from Houston](http://web.stanford.edu/group/spatialhistory/cgi-bin/site/pub.php?id=93)," Stanford University Spatial History Project.
+- Matthew Wilkens, "[The Geographic Imagination of Civil War-Era American Fiction](https://muse.jhu.edu/article/527788)," *American Literary History* vol. 25, 2013, pp. 803-840.
+- Robert K. Nelson, "[Digital Humanities as Appendix](https://muse.jhu.edu/article/613602)," *American Quarterly* vol. 68, no. 1, 2016, pp.131-136.
+
+#### Explore:
+- [Mapping Texts](http://language.mappingtexts.org/)
+
+#### Activity: Making maps meaningful
+#### Due:
+- Proposal for Final Project 2/8  
+- Notebook 2 (Maps) 2/11
+
+$~$
+
+## Week 6: February 14
+### Texts - Algorithmic ("distant") reading
+#### Read:
+- Stephen Ramsay, *[Reading Machines: Toward an Algorithmic Criticism](http://ebookcentral.proquest.com/lib/ucdavis/detail.action?docID=3413843)]  
+- Matthew Jockers, "Part 1: Foundation," pp. 3-32 in *[Macroanalysis: Digital Methods and Literary History](http://ebookcentral.proquest.com/lib/ucdavis/detail.action?docID=3414227)* (Urbana: University of Illinois Press, 2013). 
+
+#### Activity: Manipulating texts
+
+$~$
+
+## Week 7: February 21
+### Texts - Topic modeling
+#### Read: 
+- Matthew Jockers, "Theme," pp. 118-153 in *[Macroanalysis: Digital Methods and Literary History](http://ebookcentral.proquest.com/lib/ucdavis/detail.action?docID=3414227)* (Urbana: University of Illinois Press, 2013). 
+- Lisa Rhody, "[Topic Modeling and Figurative Language](http://journalofdigitalhumanities.org/2-1/topic-modeling-and-figurative-language-by-lisa-m-rhody/)" *Journal of Digital Humanities* 2, no. 1, 2012.
+- Ben Schmidt, "[Words Alone: Dismantling Topic Models in the Humanities](http://journalofdigitalhumanities.org/2-1/words-alone-by-benjamin-m-schmidt/)," *Journal of Digital Humanities* 2, no. 1, 2012.
+
+#### Activity: Analyzing texts
+#### Due:
+- Notebook 3 (Texts) 2/25
+
+$~$
+
+## Week 8: Feburary 28
+### Networks - Thinking about connection
+#### Read:
+- David Easley and Jon Kleinberg, *[Networks, Crowds, and Markets: Reasoning About a Highly Connected World](http://www.cs.cornell.edu/home/kleinber/networks-book/networks-book.pdf)*, pre-print edition (Cambridge: Cambridge University Press, 2010), selections. 
+
+#### Explore:
+- [Viral Texts](https://viraltexts.org)
+
+#### Activity: Edges and nodes
+
+$~$
+
+## Week 9: March 7
+### Networks - Humanizing networks
+#### Read:
+- Scott B. Weingart, "[Demystifying Networks, Parts I & II](http://journalofdigitalhumanities.org/1-1/demystifying-networks-by-scott-weingart/)," *Journal of Digital Humanities* 1, no. 1, 2011.
+- Caroline Winterer, "[Where is America in the Republic of Letters?](https://doi.org/10.1017/S1479244312000212)," *Modern Intellectual History* 9, no. 3, 2012, pp. 597-623.
+- Scott B. Weingart, "[Finding the History and Philosophy of Science](https://link.springer.com/article/10.1007%2Fs10670-014-9621-1)," *Erkenntnis* 80, no. 1, 2015, pp. 201-213.
+
+#### Explore: 
+- [Mapping the Republic of Letters](http://republicofletters.stanford.edu/)
+
+#### Activity: Visualizing networks
+#### Due:
+- Notebook 4 (Networks) 3/11
+
+$~$
+
+## Week 10: March 14
+### Workshopping final papers
+
+#### Due:
+- Final Project 3/21
