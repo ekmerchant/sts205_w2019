@@ -61,7 +61,7 @@ yml <- paste0('name: ',courseTitle,'\n',
               '  left:','\n',
               pages, 
               '    - text: \"Email Prof. ',profName,'\"\n',
-              '      href: mailto:',profEmail,'\"\n',
+              '      href: mailto:',profEmail,'\n',
               '    - text: \"Meet with Prof. ',profName,'\"\n',
               '      href: ',profSchedule)
 
