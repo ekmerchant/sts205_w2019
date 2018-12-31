@@ -5,6 +5,8 @@ navbar:
   left:
     - text: "Description"
       href: index.html
+    - text: "Policies"
+      href: policies.html
     - text: "Schedule"
       href: schedule.html
     - text: "Email Prof. M"

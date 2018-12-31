@@ -12,7 +12,7 @@
 # very end to build the commit into the script. 
 
 #set working directory to site's directory
-setwd("/users/emily/dropbox/ucdavis/teaching/courses/sts205/syllabus")
+setwd("/users/emily/dropbox/ucdavis/teaching/quarters/winter_2019/sts205/sts205_w2019")
 
 #list all the RMD files in your site's directory
 files <- list.files(path = ".", pattern = '*.rmd', full.names = FALSE)
