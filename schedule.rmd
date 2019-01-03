@@ -18,6 +18,7 @@ $~$
 - Roberto Franzosi, 2017, [A Third Road to the Past? Historical Scholarship in the Age of Big Data](https://doi.org/10.1080/01615440.2017.1361879), *Historical Methods* 50: 227-244.
 
 #### Activity: Getting started with R and RStudio
+- [Install](https://youtu.be/EmZqlcKkJMM) [R](https://r-project.org) and [RStudio](https://www.rstudio.com) on your machine
 
 $~$
 
