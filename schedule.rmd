@@ -42,7 +42,7 @@ $~$
 #### Read:
 - Bruno Latour, 1986, [Visualization and Cognition: Thinking with Eyes and Hands](http://hci.ucsd.edu/10/readings/Latour(1986).pdf), *Knowledge and Society: Studies in the Sociology of Culture Past and Present* 6: 1-40.
 - Michael Lynch and Steve Woolgar, 1988, [Introduction: Sociological Orientations to Representational Practice in Science](https://www.jstor.org/stable/20009022), *Human Studies* 11: 99-116.  
-- Johanna Drucker, 2014, *Graphesis: Visual Forms of Knowledge Production* (Cambridge: Harvard University Press): pp. 125-137.  
+- Johanna Drucker, 2011, [Humanities Approaches to Graphical Display](http://www.digitalhumanities.org/dhq/vol/5/1/000091/000091.html), *Digital Humanities Quarterly* 5:1.  
 - Lauren Klein, 2013, [The Image of Absence: Archival Silence, Data Visualization, and James Hemings](https://doi.org/10.1215/00029831-2367310), *American Literature* 85: 661-688.  
 - Catherine D'Ignazio and Lauren Klein, 2015, [Feminist Data Visualization](http://www.kanarinka.com/wp-content/uploads/2015/07/IEEE_Feminist_Data_Visualization.pdf), *Proceedings of the Workshop on Visualization for the Digital Humanities at IEEE VIS Conference*. Also see: Catherine D'Ignazio, [What Would Feminist Data Visualization Look Like?](https://civic.mit.edu/2015/12/01/feminist-data-visualization/) and Lauren Klein, [Feminist Data Visualization; Or, the Shape of History](http://lklein.com/2017/01/feminist-data-visualization-or-the-shape-of-history/).
 
