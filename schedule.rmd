@@ -53,12 +53,14 @@ $~$
 ## Week 4: January 31
 ### Maps - Discussion with Professor Greg Downs
 #### Read: 
-- Jo Guldi, [What is the Spatial Turn?](http://spatial.scholarslab.org/spatial-turn/) Read all sections (follow link to "Introduction," then follow links to the right of the main text).
+- Susan Schulten, 2012, Slavery and the Origin of Statistical Cartography, pp. 119-155 in *Mapping the Nation: History and Cartography in Nineteenth-Century America* (Chicago: University of Chicago Press).
+- Edward L. Ayers and Scott Nesbit, 2011, [Seeing Emancipation: Scale and Freedom in the American South](https://www.jstor.org/stable/10.2307/26070087), *Journal of the Civil War Era* 1: 2-34.
+- Scott Nesbit, 2014, Visualizing Emancipation: Mapping the End of Slavery in the American Civil War, pp. 427-434 in Justyna Zander and Pieter J. Mosterman, eds., *Computation for Humanity: Information Technology to Advance Society* (New York: CRC Press).
+- Andrew Fialka, 2015, [Controlled Chaos: Spatiotemporal Patterns within Missouri's Irregular Civil War](http://filsonhistorical.org/wp-content/uploads/Fialka-Andrew-William-Controlled-Chaos-Spatiotemporal-Patterns-within-Missouri%E2%80%99s-Irregular-Civil-War.pdf), pp. 43-70 in Joseph M. Beilein Jr. and Matthew C. Hulbert, eds., *The Civil War Guerrilla: Unfolding the Black Flag in History, Memory, and Myth* (Lexington: Univerity of Kentucky Press).
 
 #### Explore:
 - Greg Downs and Scott Nesbit, [Mapping Occupation](http://mappingoccupation.org/).
 - Scott Nesbit and Edward L. Ayers, [Visualizing Emancipation](http://dsl.richmond.edu/emancipation/).
-- Robert K. Nelson and Edward L. Ayers, eds., [American Panorama](https://dsl.richmond.edu/panorama/).
 
 #### Activity: Mapping in R
 
