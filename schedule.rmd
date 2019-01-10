@@ -32,6 +32,7 @@ $~$
 
 #### Explore:
 - [IPUMS-USA](https://usa.ipums.org/usa/). Request user account.
+- James N. Gregory, [America's Great Migrations](http://depts.washington.edu/moving1/).
 
 #### Activity: Working with numbers
 
@@ -77,7 +78,7 @@ $~$
 - Robert K. Nelson, 2016, [Digital Humanities as Appendix](https://muse.jhu.edu/article/613602), *American Quarterly* 68: 131-136.
 
 #### Explore:
-- [Mapping Texts](http://language.mappingtexts.org/)
+- [Mapping Texts](http://language.mappingtexts.org/).
 
 #### Activity: Making maps meaningful
 #### Due:
@@ -115,7 +116,7 @@ $~$
 - David Easley and Jon Kleinberg, 2010 *[Networks, Crowds, and Markets: Reasoning About a Highly Connected World](http://www.cs.cornell.edu/home/kleinber/networks-book/networks-book.pdf)*, pre-print edition (Cambridge: Cambridge University Press), selections. 
 
 #### Explore:
-- [Viral Texts](https://viraltexts.org)
+- [Viral Texts](https://viraltexts.org).
 
 #### Activity: Edges and nodes
 
