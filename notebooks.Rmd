@@ -1,0 +1,37 @@
+---
+title: "Notebooks"
+output: 
+  html_document:
+    toc: true    
+    toc_depth: 3
+    toc_float: true
+    theme: paper
+---
+
+### Notebook 1: Numbers - Due 1.28.19
+The purpose of this assignment is to get you started working with quantitative data in data frames and visualizing data. You may choose from among these four options, or consult with me if you have another idea.
+
+**Option 1:** Choose one of the three articles we read for 1/17 (Gross, Ruggles, or Gregory). For four of the tables in that article, use IPUMS data to replicate the author's analysis. Instead of presenting tables, however, present your analysis as a series of data visualizations.
+
+**Option 2:** Do the same thing for any other article of your choice, using the same data used by the original author or a comparable data set you have access to.
+
+**Option 3:** Pose a research question that you can explore using IPUMS data. Produce four data visualizations that address your research question.
+
+**Option 4:** Pose a research question that you can explore using other quantitative data to which you have access. Produce four data visualizations that address your research question.
+
+**Regardless of which option you choose, you should do the following:**
+
+- Format your assignment as an R Notebook (submit the .nb.html file through Canvas).
+- Very briefly (one or two paragraphs), ground your analysis in an existing field of scholarship or scholarly debate (if you choose Option 1 or 2, you can summarize the framing of the article you are replicating).
+- Describe your analysis in enough detail that a reader could replicate it (without having read the original article if you choose Option 1 or 2).
+- If you choose Option 1 or 2, discuss any challenges you face in replicating the original study. 
+- If you choose Option 3 or 4, explain how your analysis addresses your research question or topic.
+- Drawing on readings for this class or any other critical scholarship about data analysis and/or visualization, explain the rationale behind the specific visualizations you have chosen. If your choice is constrained by the capabilities of R (or your capabilities with R), explain that and describe what you would have liked to do differently.
+- Explore the implications of your analysis. If you are replicating another study, do your visualizations shed any new light on the topic? Did the process lead you to challenge any aspect of the original study? For any option, what questions do your visualizations answer and what new questions do they raise?
+- Follow whatever citation practices are standard in your discipline.
+
+### Notebook 2: Maps - Due 2.11.19
+
+### Notebook 3: Texts - Due 2.25.19
+
+### Notebook 4: Networks - Due 3.11.19

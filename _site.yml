@@ -5,6 +5,8 @@ navbar:
   left:
     - text: "Description"
       href: index.html
+    - text: "Notebooks"
+      href: notebooks.html
     - text: "Policies"
       href: policies.html
     - text: "Schedule"
