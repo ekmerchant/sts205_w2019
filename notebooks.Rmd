@@ -11,7 +11,7 @@ output:
 ### Notebook 1: Numbers - Due 1.28.19
 The purpose of this assignment is to get you started working with quantitative data in data frames and visualizing data. You may choose from among these four options, or consult with me if you have another idea.
 
-**Option 1:** Choose one of the three articles we read for 1/17 (Gross, Ruggles, or Gregory). For four of the tables in that article, use IPUMS data to replicate the author's analysis. Instead of presenting tables, however, present your analysis as a series of data visualizations.
+**Option 1:** Choose one of the three articles we read for 1/17 (Gross, Ruggles, or Gregory). Use IPUMS data to replicate the author's analysis. Instead of presenting tables, however, present your analysis as a series of four graphical data visualizations.
 
 **Option 2:** Do the same thing for any other article of your choice, using the same data used by the original author or a comparable data set you have access to.
 
@@ -31,6 +31,21 @@ The purpose of this assignment is to get you started working with quantitative d
 - Follow whatever citation practices are standard in your discipline.
 
 ### Notebook 2: Maps - Due 2.11.19
+For this assignment, you will use R to produce one or more maps illustrating the spatial distribution of one or more variables of interest. Suggestions include: 
+
+- Reproduce a map you encountered in the reading for this class or in any other venue
+- Map the data you analyzed for Notebook 1
+- Map data that you are working on as part of another project
+- Map data from IPUMS or NHGIS
+
+In addition to the map(s) and all of the code that you used to build the map(s), your notebook should include the following (no more than one paragraph each):
+
+- Explain the analytic purpose of the map. If you are reproducing a map you encountered elsewhere, you can explain the original analytic purpose and/or your purpose in reproducing it. If you are mapping data you worked with in Notebook 1, explain how mapping the data might provide additional insight. If you are mapping data from another source, explain why that particular data set is worth mapping.
+- Explain the choices you made in creating your map. How do those choices affect the way the data appear in the map or the way a viewer might interpret your map?
+- Discuss the way your map engages space and visualizes the construction of place. You might think back to Drucker's idea of "spatiality" or Blevins's idea of "imagined geography." How do the affordances of R either constrain or enhance your ability to engage space?
+- Describe your map in enough detail that readers could replicate it and interpret it for themselves.
+- Interpret your map in light of your knowledge of the map's topic. If you are replicating a map from another source, your knowledge might come from that source. If you are working with your own data, use your knowledge of those data. If you are mapping data from IPUMS or NHGIS on a topic you know about, draw on any references you have for that topic.
+- Follow whatever citation practices are standard in your discipline.
 
 ### Notebook 3: Texts - Due 2.25.19
 
