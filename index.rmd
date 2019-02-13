@@ -42,6 +42,7 @@ All class readings are available online and linked from the syllabus. You may al
 - [Advanced R](http://adv-r.had.co.nz/) by Hadley Wickham 
 - [Introduction to Text Analysis: A Coursebook](http://walshbr.com/textanalysiscoursebook/) by Brandon Walsh and Sarah Horowitz  
 - [Six Septembers: Mathematics for the Humanist](http://digitalcommons.unl.edu/zeabook/55/) by Patrick Juola and Stephen Ramsay  
+- [Text Mining for Humanists and Social Scientists in R](https://tm4ss.github.io/docs/index.html) by Andreas Niekler and Gregor Wiedemann
 
 ### Acknowledgments
 This syllabus was inspired by and adapted from numerous syllabi in the digital humanities and digital history. The most direct and obvious influences are the courses HIST 7370: Texts, Maps, and Networks and HIST 7219: Humanities Data Analysis, taught by [Ben Schmidt](benschmidt.org), [Ryan Cordell](ryancordell.org), and [Cameron Blevins](cameronblevins.org) at Northeastern University. I am also grateful to [Scott Weingart](http://scottbot.net/) for his [list of coding resources](http://scottbot.net/teaching-yourself-to-code-in-dh/).
